@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--resets the viewPort-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--adds CSS for IE9 & older-->
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+  <!--Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+				'banner banner banner navegation navegation navegation navegation navegation navegation'
+				'about about about about about about about about about about about about'
+        'contact contact contact'
+				'footer footer footer footer footer footer footer footer footer footer footer footer';
+				background-color: green;
+				grid-gap: 10px
+    }
+
+      .container div {
+				border: 5px solid red;
+				background-color: yellow;
+				padding: 5px;
+				font-size: 30px;
+				text-align: center;
+			}
+	
+			.about { grid-area: main; }
+			.contact { grid-area: right; }
+			.footer { grid-area: footer; }
+
+  </style>
+
+</head>
+
+<body>
+      <div class="container">
+        <div class="banner">
+          <div class="col-sm-3 div">
+            <h1>site banner goes here. Get with Darren the div code, as all head should be the same in all pages</h1>
+          </div> <!-- Close head div -->
+        </div> <!-- Close row div -->
+
+        <div class="navegation">
+          <div class="col-sm-9 div">
+            <h1>navigation bar goes here. Get with Darren the div code, as all head should be the same in all pages</h1>
+          </div> <!-- Close head div -->
+        </div> <!-- Close row div -->
+      </div> <!-- Close container div -->
+
+      <div class="container">
+        <div class="about">
+          <div class="col-sm-12 div">
+            <h1>About us - check with Darren if it is can a single 12 col. We can add as many as row we want, or make the column higher </h1>
+          </div> <!-- Close about us div -->
+        </div> <!-- Close row div -->
+      </div> <!-- Close container div -->
+
+      <div class="container">
+        <div class="contact">
+          <div class="col-sm-12 div">
+            <h1>We want to hear from you. </h1>
+          </div> <!-- Close sugestion box div -->
+        </div> <!-- Close row div -->
+      </div> <!-- Close container div -->
+
+      <div class="container">
+        <div class="footer">
+          <div class="col-sm-12 div">
+            <h1>Footer - check with Darren if it is a single 12 col </h1>
+          </div> <!-- Close footer div -->
+        </div> <!-- Close row div -->
+      </div> <!-- Close container div -->
+
+</body>
+
+</html>
