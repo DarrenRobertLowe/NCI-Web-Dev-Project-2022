@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hibernia Retreats</title>
+		<title>Hibernia Retreats - Destinations</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -10,6 +10,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 	  
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/destinations.css">
 	</head>
 
 
@@ -18,9 +19,7 @@
 
 			<div class="row">
 				<div class="col-sm-4 div">
-					<div id="header">
-						<h1>Hibernia Retreats Logo</h1>
-					</div>
+						<img src="images/logo.png" alt="Hibernia Retreats Logo">
 				</div>
 				
 				<div class="col-sm-8 div">
@@ -67,64 +66,69 @@
 					</div>
 				</div>
 			</div>
-			
-			<div id="content" class="row">
-				<div id ="carouselArea" class="col-sm-12">
-					<!-- CAROUSEL -->
-					<div id="carousel" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carousel" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel" data-slide-to="1"></li>
-								<li data-target="#carousel" data-slide-to="2"></li>
-							</ol>
-							
-						<div class="carousel-inner">
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/carousel/yoga_slide.png" alt="Yoga">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/carousel/Killarney_slide.png" alt="Killarney">
-							</div>
-							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/carousel/moher_slide.png" alt="Cliffs of Moher">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/carousel/glendalough_slide.png" alt="Glendalough">
-							</div>
-						</div>
-						
-						<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						
-						<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-					<!-- end of carousel -->
-				</div>
-			</div>
+
 			
 			
 			<div id="content" class="row">
-				<div id="buffer" class="col-sm-1">
-				</div>
-				
-				
+				<div id="buffer" class="col-sm-1"></div>
 				<div id ="contentArea" class="col-sm-10">
+				<!-- page content starts here -->
+				
+					<h1> Destinations </h2>
+					<p> Hibernia Retreats have several stress relieving snd soul enriching destinations to choose from.</p>
 					
-					<img src="images/image5.png" class="leftImage">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-					<br/>
-					<br/>
-					<img src="images/image4.png" class="rightImage">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-				</div>
+					<div class="destinationBox" id="destinationBox_Glendalough">
+						<div class="destinationBlurb">
+							<p class="destinationTitle">
+								Glendalough
+							</p>
+							<p class="destinationBlurbText">
+								The deep forests of Glendalough are one of the most popular destinations in Ireland.
+								Open yourself to a meaningful yoga and meditation retreat as the course is designed for serious students
+								from keen beginners.
+							</p>
+							<p>
+								<a href="/destinations/glendalough.html" type="button" class="btn btn-light">Read More and book now!</a>
+							</p>
+						</div>
+					</div>
 					
-				<div id="buffer" class="col-sm-1">
+					
+					
+					<div class = "destinationBox" id="destinationBox_Killarney">
+						<div class="destinationBlurb">
+							<p class="destinationTitle">
+								Killarney
+							</p>
+							<p class="destinationBlurbText">
+								 Vist an animal farm in Killarney National Park, get up close and personal with creatures you’ve only seen in pictures. 
+							</p>
+							<p>
+								<a href="/destinations/killarney.html" type="button" class="btn btn-light">Read More and book now!</a>
+							</p>
+						</div>
+					</div>
+					
+					
+					
+					<div class = "destinationBox" id="destinationBox_Moher">
+						<div class="destinationBlurb">
+							<p class="destinationTitle">
+								Cliffs of Moher
+							</p>
+							<p class="destinationBlurbText">
+								A group of fellow men to bond brotherhood and learn healthy ways to self care and nourishment. 
+							</p>
+							<p>
+								<a href="/destinations/cliffs_of_moher.html" type="button" class="btn btn-light">Read More and book now!</a>
+							</p>
+						</div>
+					</div>
+				
+				
+				<!-- page content ends here -->	
 				</div>
+				<div id="buffer" class="col-sm-1"></div>
 			</div>
 			
 			

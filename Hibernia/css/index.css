@@ -1,6 +1,10 @@
+#body{
+	font-size:100%;
+	font-family: Verdana, Arial, Helvetica;
+}
+
 #header {
 	border: solid 2px black;
-	
 }
 
 p {
