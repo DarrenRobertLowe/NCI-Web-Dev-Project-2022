@@ -17,7 +17,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" href="contactUs.css">
+  <link rel="stylesheet" href="css/contactUs.css">
 
   <script src="external.js"></script>
 
@@ -85,12 +85,12 @@
 
           <div id ="contentArea" class="col-sm-10">
             
-            <img src="asanas.jpg" class="leftImage">
+            <img src="images/aboutUs/asanas.png" class="leftImage">
             <h3>About us</h3>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
             <br/>
             <br/>
-            <img src="yogaTeam.jpeg" class="rightImage">
+            <img src="images/aboutUs/yogaTeam.png" class="rightImage">
             <h3>Yoga Instructors</h3>
             <p>Molly Shao:</p>
             <p>Darren:</p>
@@ -101,30 +101,30 @@
           </div>
         </div>
 
-          <div id="contactForm" class="col-sm-12">
-            
-            <form action="" id="contactUs" name="contactUs" onsubmit="return false;">
-
-              <fieldset class="title">
-                <legend id="title">We want to hear from you. </legend>
-                <br/>
+        <form action="" id="contactUs" name="contactUs" onsubmit="return false;">
               
-                <div id="contactForm" class="col-sm-8">
-                
+          <fieldset class="title">
+            <legend id="title">We want to hear from you. </legend>
+            <br/>
+    
+            <div class="form">
+              <div class="row" class="col-sm-8">
+                <div id="contactUS">
+    
                   <fieldset class="name">
                     <legend>Name</legend>
                     <input type="text" name="name" size="60"/>
                   </fieldset>
                   <br/>
                   <br/>
-
+    
                   <fieldset class="email">
                     <legend>Email</legend>
                     <input type="email" name="email" size="60">
                   </fieldset>
                   <br/>
                   <br/>
-
+    
                   <fieldset class="topic">
                     <legend>Topic</legend>
                       <select id="dropBoxTopic" name="dropBoxTopic" onchange="">
@@ -134,35 +134,38 @@
                         <option value="Retreats">Retreats</option>
                         <option value="Instructions">Instructions</option>
                       </select>
-                  </fieldset>
-                  <br/>
-                  <br/>
-
-                  <fieldset class="comments">
-                    <legend id="comments">Comments</legend>
+                    </fieldset>
+                    <br/>
+                    <br/>
+    
+                    <fieldset class="comments">
+                      <legend id="comments">Comments</legend>
                       <textarea rows="5" cols="60"></textarea>
-                  </fieldset>
-
-                </div> <!--end of col 8 div-->
-
-                <div id="buddhaHead" class="col-sm-4">
-                  <img src="buddhaHead.jpeg" alt="Buddha Head">
-                </div>
-
-              </fieldset>
-                <br/>
-
-                <div id="button">
-                  <input type="submit" value="Send"/> <input type="reset" value="Reset">
-                </div>  
-            </form>  
-          </div> 
-
-        <div class="row">
-          <div id="footer" class="col-sm-12 div">
-            <p>© 2022 Hibernia Retreats</p>
-          </div> <!-- Close footer div -->
-        </div> <!-- Close row div -->
+                    </fieldset>
+    
+                </div> <!--end contactUs div-->
+              </div> <!--end of col 8 div-->
+    
+                    <div class="row" class="col-sm-4">
+                      <div id="buddhaHead">
+                        <img src="images/aboutUs/buddhaHead.png" alt="Buddha Head">
+                      </div>
+                    </div> <!--end of col 4 div-->
+    
+          </fieldset>
+          <br/>
+    
+                    <div id="button">
+                      <input type="submit" value="Send"/> <input type="reset" value="Reset">
+                    </div>  
+    
+        </form>  <!--end of form contact US-->
+    
+            <div class="row">
+              <div id="footer" class="col-sm-12 div">
+                <p>© 2022 Hibernia Retreats</p>
+              </div> <!-- Close footer div -->
+            </div> <!-- Close row div -->
 
 </body>
 

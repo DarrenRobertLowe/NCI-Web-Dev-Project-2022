@@ -82,10 +82,17 @@ input, select, textarea {
 }
 
 #buddhaHead {
-  float: right;
-  object-fit: cover;
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 550px;
+  margin-top: 30px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 45px;
+  margin-left: 45px;
+  margin-bottom: 45px;
 }
 
 #button {
