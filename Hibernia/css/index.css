@@ -3,9 +3,6 @@
 	font-family: Verdana, Arial, Helvetica;
 }
 
-#header {
-	border: solid 2px black;
-}
 
 p {
 	margin:5px;
@@ -26,8 +23,7 @@ img {
 	background: WhiteSmoke;
 }
 
-#content {
-}
+
 
 #contentArea {
 	padding: 50px;
