@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--resets the viewPort-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--adds CSS for IE9 & older-->
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+  <!--Bootstrap CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="contactUs.css">
+
+  <script src="external.js"></script>
+
+</head>
+
+<body>
+
+      <!--head was done by Darren-->
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-4 div">
+            <div id="header">
+              <img src="logo.png" alt="Hibernia Retreats Logo">
+            </div>
+          </div>
+          
+          <div class="col-sm-8 div">
+            <div id="navbar">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Hibernia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                  <a class="nav-link" href="#">Gallery <span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Destinations
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Glendalough.html">Glendalough</a>
+                    <a class="dropdown-item" href="Cliffs_Of_Moher.html">Cliffs of Moher</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="Killarney.html">Killarney National Park</a>
+                  </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <!-- 
+                  <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                  </li> -->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div id="content" class="row">
+          <div id="buffer" class="col-sm-1">
+          </div>
+
+          <div id ="contentArea" class="col-sm-10">
+            
+            <img src="asanas.jpg" class="leftImage">
+            <h3>About us</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <br/>
+            <br/>
+            <img src="yogaTeam.jpeg" class="rightImage">
+            <h3>Yoga Instructors</h3>
+            <p>Molly Shao:</p>
+            <p>Darren:</p>
+            <p>Mayara Regio: Since 2013, </p>
+          </div>
+
+				  <div id="buffer" class="col-sm-1">
+          </div>
+        </div>
+
+          <div id="contactForm" class="col-sm-12">
+            
+            <form action="" id="contactUs" name="contactUs" onsubmit="return false;">
+
+              <fieldset class="title">
+                <legend id="title">We want to hear from you. </legend>
+                <br/>
+              
+                <div id="contactForm" class="col-sm-8">
+                
+                  <fieldset class="name">
+                    <legend>Name</legend>
+                    <input type="text" name="name" size="60"/>
+                  </fieldset>
+                  <br/>
+                  <br/>
+
+                  <fieldset class="email">
+                    <legend>Email</legend>
+                    <input type="email" name="email" size="60">
+                  </fieldset>
+                  <br/>
+                  <br/>
+
+                  <fieldset class="topic">
+                    <legend>Topic</legend>
+                      <select id="dropBoxTopic" name="dropBoxTopic" onchange="">
+                        <option value="Select topic">Select topic</option>
+                        <option value="Contact Us">Contact Us</option>
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="Retreats">Retreats</option>
+                        <option value="Instructions">Instructions</option>
+                      </select>
+                  </fieldset>
+                  <br/>
+                  <br/>
+
+                  <fieldset class="comments">
+                    <legend id="comments">Comments</legend>
+                      <textarea rows="5" cols="60"></textarea>
+                  </fieldset>
+
+                </div> <!--end of col 8 div-->
+
+                <div id="buddhaHead" class="col-sm-4">
+                  <img src="buddhaHead.jpeg" alt="Buddha Head">
+                </div>
+
+              </fieldset>
+                <br/>
+
+                <div id="button">
+                  <input type="submit" value="Send"/> <input type="reset" value="Reset">
+                </div>  
+            </form>  
+          </div> 
+
+        <div class="row">
+          <div id="footer" class="col-sm-12 div">
+            <p>© 2022 Hibernia Retreats</p>
+          </div> <!-- Close footer div -->
+        </div> <!-- Close row div -->
+
+</body>
+
+</html>
