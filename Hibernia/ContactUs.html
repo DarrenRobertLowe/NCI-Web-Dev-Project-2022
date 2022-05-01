@@ -107,7 +107,7 @@
           </div>
         </div>
 
-        <form action="" id="contactUs" name="contactUs" onsubmit="return false;">
+        <form action="" method="post" id="contactUs" name="contactUs"  onsubmit="return false;">
               
           <fieldset class="title">
             <legend id="title">We want to hear from you </legend>
@@ -119,14 +119,16 @@
     
                   <fieldset class="name">
                     <legend>Name</legend>
-                    <input type="text" name="name" size="60"/>
+                    <input type="text" id="name" name="name" size="60"/>
+                    <span class="error">Please enter your Name</span>
                   </fieldset>
                   <br/>
                   <br/>
     
                   <fieldset class="email">
                     <legend>Email</legend>
-                    <input type="email" name="email" size="60">
+                    <input type="email" name="email" id="email" size="60">
+                    <span class="error" id="invalid_email">Email is invalid</span>
                   </fieldset>
                   <br/>
                   <br/>
@@ -152,17 +154,18 @@
                 </div> <!--end contactUs div-->
               </div> <!--end of col 8 div-->
     
-                    <div class="row" class="col-sm-4">
-                      <div id="buddhaHead">
-                        <img src="images/aboutUs/buddhaHead.png" alt="Buddha Head">
-                      </div>
-                    </div> <!--end of col 4 div-->
+              <div class="row" class="col-sm-4">
+                <div id="buddhaHead">
+                  <img src="images/aboutUs/buddhaHead.png" alt="Buddha Head">
+                </div>
+              </div> <!--end of col 4 div-->
     
           </fieldset>
           <br/>
     
                     <div id="button">
-                      <input type="submit" value="Send"/> <input type="reset" value="Reset">
+                      <input type="submit" value="Send" id="Send" click="return message_sent"/> 
+                      <a href="ContactUs.html"> <input type="reset" value="Reset" id="Reset" click="return reset_page">
                     </div>  
     
         </form>  <!--end of form contact US-->
