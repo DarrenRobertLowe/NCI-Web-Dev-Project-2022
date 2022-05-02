@@ -213,13 +213,24 @@
 				<form onsubmit="submitEmail();return false"> <!-- prevents submission from reloading page -->
 					<label for="form_email">Email: </label>
 					<input type="email" id="form_email">
+					<input type="submit" id="submit_email">
 					</input>
 				</form>
 			</div>
-
 		</div> 
-					
-					
+		
+		
+		<!-- thanks modal -->
+		<div id="thanksModal" class="modal">
+			<div class="modal-content">
+				<h3>Thanks! :)</h3>
+				<h4>Please look forward to hearing from us!</h4>
+				</br>
+				</br>
+				<button id="closeThanks" onclick=closeThanks()>will do!</button>
+			</div>
+		</div>
+		
 		<!-- JavaScript -->
 		<!-- the scripts need to go before the </body> tag so that everything
 			is fully loaded before them. -->

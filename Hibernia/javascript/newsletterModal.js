@@ -1,41 +1,43 @@
-// not sure of law surrounding non-tracking cookies
+// not sure of law surrounding non-tracking cookies so we can't use this
 /* localStorage.setItem('IsModalShown', false); */ 
 
 
 // Get the modal
 var modal = document.getElementById("newsletterModal");
+var thanksModal = document.getElementById("thanksModal");
 
-// Get the button that opens the modal
-/* var btn = document.getElementById("myBtn"); */
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var registrationClose = document.getElementsByClassName("close")[0];
+var closeThanks = document.getElementById("closeThanks");
 
 
 
 
-$(document).ready(function(){
-   setTimeout(function(){
-       modal.style.display = "block";
-   }, 2000);
-});
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+// allow 'X' to close the modal
+registrationClose.onclick = function() {
+	modal.style.display = "none";
+	thanksModal.style.display = "block";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
+// Allow clicking outside the modal to dismiss it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+	
+	else if (event.target == thanksModal) {
+		thanksModal.style.display = "none";
+	}
 } 
+
 
 
 
 function submitEmail(){
 	/* hide the modal now */
 	modal.style.display = "none";
+	thanksModal.style.display = "block"; /* show the thank you message */
 }
+
