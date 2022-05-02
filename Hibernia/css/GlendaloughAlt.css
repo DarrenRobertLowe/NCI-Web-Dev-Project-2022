@@ -1,0 +1,57 @@
+.booking {
+	color:  #000000;
+ 	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:Arial;
+	border: 2px;		/* this should have a color and style e.g. border: 2px solid WhiteSmoke;*/
+	width:250px;
+	padding:15px;
+	background:#fff;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+	/* place in center of the column */
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#contentArea {
+	background-image: url("../images/destinations/killarney.png");
+	background-repeat:no-repeat;
+}
+
+.transparentWindow {
+	background-color:rgba(255,255,255,0.7); /*transparent background*/
+	padding:10px;
+}
+
+.overview{
+	
+}
+
+#contentArea .booking fieldset,.overview fieldset{
+	margin:10px;
+	padding:15px;
+	/*
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+	*/
+    border-radius: 10px;
+		font-family:AvenirLTStd, Arial, Helvetica, sans-serif;
+	
+}
+
+
+/* debug borders
+.row {
+	border: dotted 2px red;
+}
+
+.col {
+	border: dashed 2px blue;
+}
+
+.booking {
+	border: dotted 2px green;
+} */
