@@ -3,23 +3,30 @@ function confirm_reset(){
 }
 
 $(document).ready(function() {
-  $('.error').hide();
-  $('#submit').click(function(){
+  $('.nameError').hide();
+  $('.emailError').hide();
+  
+  $('#Send').click(function(){
     var name = $('#name').val();
     var email = $('#email').val();
-
-    if(name== ''){
-      $('#name').next().show();
+	
+    if(name == ""){
+		$('.nameError').show();
       return false;
-    }
-    if(email== ''){
-      $('#email').next().show();
+    } else {
+		$('.nameError').hide();
+	}
+	
+    if(email == ''){
+      $('.emailError').show();
       return false;
     }
     if(IsEmail(email)==false){
-      $('#invalid_email').show();
+      $('.emailError').show();
       return false;
-    }
+    } else {
+		$('.emailError').hide();
+	}
     $.post("", $("#myform").serialize(),  function(response) {
       $('#myform').fadeOut('slow',function(){
       $('#correct').html(response);
