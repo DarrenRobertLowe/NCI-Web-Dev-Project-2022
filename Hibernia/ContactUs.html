@@ -93,7 +93,7 @@
             
             <img src="images/aboutUs/aboutUs.jpeg" class="leftImage">
             <h3><b>About us</b></h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <p> Formed in 2022, Hibernia Retreats welcome both men and women, young and old to join us on our journey into the calming and spiritual world of Yoga. From Katonah to yin to Ayurvedic massages, we offer an eclectic assortment of yoga techniques and practices that can truly help you, whatever your goals may be. Our teachers have led communal glasses globally, therapeutic one on one sessions, workshops and even teacher training and are knowledgeable in everything wellness related. </p>
             <br/>
             <br/>
             <img src="images/aboutUs/yogaTeam2.jpeg" class="rightImage">
@@ -148,7 +148,7 @@
         
                         <fieldset class="comments">
                           <legend id="comments">Comments</legend>
-                          <textarea rows="5" cols="45"></textarea>
+                          <textarea rows="5" cols="47"></textarea>
                         </fieldset>
             <span class="commentsError">Please enter your comments!</span>
 
@@ -166,8 +166,26 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div id="button">
-                        <input type="submit" value="Send" id="Send" onclick="return message_sent()"/>
-                         
+                        <!-- Trigger/Open The Modal -->
+                        <input type="submit" value="Send" id="Send">
+
+                          <!-- The Modal -->
+                          <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <span class="close">&times;</span>
+                                  <h2>Hello =)</h2>
+                              </div>
+                              <div class="modal-body">
+                                <p>Thank you for your email. We will reply to you as soon as possible.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <h3>Namaste</h3>
+                              </div>
+                            </div>
+                          </div>
+
                         <a href="contactUs.html"> <input type="reset" value="Reset" id="Reset" onclick="return confirm_reset()">
                       </div> <!--end of id button div-->
                     </div> <!--end of class col-sm-12 div-->
