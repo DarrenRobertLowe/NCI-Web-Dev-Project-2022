@@ -107,7 +107,7 @@
           </div>
         </div> <!-- end of row -->
 
-              <form action="" method="post" id="contactUs" name="contactUs"  onsubmit="return false;">
+              <form action="" method="post" id="contactForm" name="contactUs"  onsubmit="return false;">
 
                 <fieldset class="title">
                   <legend id="title">We want to hear from you </legend>
@@ -121,13 +121,13 @@
                           <legend>Name</legend>
                           <input type="text" id="name" name="name" size="50"/>
                         </fieldset>
-						<span class="nameError">Please enter a name!</span>
+						<span class="nameError">Please enter your name!</span>
                         <br/>
                         <br/>
     
                         <fieldset class="email">
                           <legend>Email</legend>
-                          <input type="email" name="email" id="email" size="50">
+                          <input type="text" name="email" id="email" size="50">
                         </fieldset>
 						<span class="emailError">Please enter a valid email!</span>
                         <br/>
@@ -150,6 +150,7 @@
                           <legend id="comments">Comments</legend>
                           <textarea rows="5" cols="45"></textarea>
                         </fieldset>
+            <span class="commentsError">Please enter your comments!</span>
 
                       </div> <!--end of id contactUs div-->
                     </div> <!--end of class col-sm-8 div-->
