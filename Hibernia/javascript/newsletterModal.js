@@ -5,40 +5,40 @@
 
 
 // Get the modal
-var modal = document.getElementById("newsletterModal");
-
+var newsmodal = document.getElementById("newsletterModal");
+var thanksModal = document.getElementById("thanksModal");
 
 // Get the <span> element that closes the modal
 var registrationClose = document.getElementsByClassName("close")[0];
 
-
 $(document).ready(function(){
    setTimeout(function(){
-       modal.style.display = "block";
+       newsmodal.style.display = "block";
    }, 5000);
 });
 
-
-
-
 // allow 'X' to close the modal
 registrationClose.onclick = function() {
-	modal.style.display = "none";
+	newsmodal.style.display = "none";
 }
 
-
-// Allow clicking outside the modal to dismiss it
+// Allow clicking outside the modals to dismiss them
 window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
+	if (event.target == newsmodal) {
+		newsmodal.style.display = "none";
 	}
-} 
-
-
-
+	
+	if (event.target == thanksModal) {
+		thanksModal.style.display = "none";
+	}
+}
 
 function submitEmail(){
 	/* hide the modal now */
-	modal.style.display = "none";
+	newsmodal.style.display = "none";
+	thanksModal.style.display = "block";
 }
 
+function closeThanksModal(){
+	thanksModal.style.display = "none";
+}
