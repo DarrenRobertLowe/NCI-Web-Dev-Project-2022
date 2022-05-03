@@ -23,6 +23,7 @@ $(document).ready(function() {
     }
     if(IsEmail(email)==false){
       $('.emailError').show();
+	  
       return false;
     } else {
 		$('.emailError').hide();

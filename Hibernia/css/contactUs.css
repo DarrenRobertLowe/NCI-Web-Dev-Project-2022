@@ -85,3 +85,9 @@ input, select, textarea {
 #button {
   text-align: center;
 }
+
+
+.nameError, .emailError{
+	margin-left: 10px;
+	color:red;
+}
