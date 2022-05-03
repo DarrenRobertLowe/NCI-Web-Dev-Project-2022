@@ -20,7 +20,8 @@ img {
 }
 
 #buffer{
-	background: WhiteSmoke;
+	/*background: WhiteSmoke;*/
+	background: #5584ac;
 }
 
 
@@ -63,6 +64,8 @@ img {
 	text-shadow: black 0px 0px 5px;
 	margin:0;
 }
+
+
 
 
 /* debug borders */

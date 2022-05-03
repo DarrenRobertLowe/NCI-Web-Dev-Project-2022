@@ -15,7 +15,7 @@
 }
 
 
-/* Modal Content/Box */
+/* Modal Content Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
@@ -45,6 +45,10 @@
 .modal form {
 	margin-left:auto;
 	margin-right:auto;
+}
+
+#submit{
+	text-align:center;
 }
 
 .modal p, h3, h4 {
