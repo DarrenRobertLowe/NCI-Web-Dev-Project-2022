@@ -8,11 +8,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="../javascript/Glendalough.js"></script>
+
 
 		<link rel="stylesheet" href="../css/index.css">
 		<link rel="stylesheet" href="../css/destinations.css">
-		<link rel="stylesheet" href="../css/GlendaloughAlt.css">
+		<link rel="stylesheet" href="../css/killarney.css">
 	</head>
 
 
@@ -93,20 +93,19 @@
 						<div class="col">
 							<div class="overview">
 								<h2 class="title">
-									3 Day Weekend Walk Meditation and Yoga Retreat in Glendalough, Co Wicklow
+									Day trips Animal Retreat in Killarney National Park, Co. Kerry
 								</h2>
 
 								<div class="tip">
-									<p>Expert tip: This is one of the most popular yoga retreats offered in Ireland. </p>
+									<p>Gaze at an animal in its natural habitation and feel your soul start to soften. </p>
 								</div>
 
 								<div class="intro">
 									<p>
-										Open yourself to a meaningful yoga and meditation retreat as the course is designed
-										for serious students from keen beginners to experienced practitioners who wish to explore
-										the connection between mindfulness and the classical eight-limb system of yoga. You will
-										be able to explore relaxation and understand how the integrated approach can become a
-										tool of transformation within a yoga practice.
+                    Because getting closer to non-human friends gives us a new perspective on our inner life and interpersonal relationships.
+                    Vist an animal farm in Killarney National Park, get up close and personal with creatures you’ve only seen in pictures.
+                    There are luxury safari retreats in many locations around the world.
+                    Many retreats also offer day trips from their locations to nearby animal sanctuaries.
 									</p>
 								</div>
 							</div> <!-- end of overview -->
@@ -122,27 +121,32 @@
 							<div class="bulletpoints">
 								<h3>Highlights</h3>
 								<ul>
-									<li>Daily yoga classes</li>
-									<li>Basic pranayama techniques</li>
-									<li>Learn a simple meditation routine</li>
-									<li>Daily walk meditation and pranayama sessions in the nature</li>
-									<li>A number of asanas that you can include in your daily routine</li>
-									<li>Daily organic vegetarian meals</li>
-									<li>2 nights accommodation</li>
+                  <li>Reduce stress and anxiety</li>
+                  <li>Warding off loneliness</li>
+                  <li>Reduce depression</li>
+                  <li>Spend time with various animals treated with respect and dignity</li>
+                  <li>Great way to spend family time</li>
+                  <li>Raise serotonin and dopamine</li>
+                  <li>Unconditional love and companionship</li>
 								</ul>
 
-								<h3>Skill level</h3>
+								<h3>Warning</h3>
 								<ul>
-									<li>Beginner</li>
-									<li>Intermediate</li>
-									<li>Advanced</li>
+                  <li>Animal Allergy</li>
+                  <li>Some are rescued from the animal used industries, so treat them with love</li>
+                  <li>Hard to say goodbye</li>
 								</ul>
 
 
-								<h3> Meditation styles </h3>
+								<h3>  Species </h3>
 								<ul>
-									<li>Vipassana</li>
-									<li>Buddhist</li>
+                  <li>Horses</li>
+                  <li>Llamba</li>
+                  <li>Goats</li>
+                  <li>Cows</li>
+                  <li>Dogs</li>
+                  <li>Rabbits</li>
+                  <li>And more...</li>
 								</ul>
 							</div> <!-- end of bullet points -->
 						</div> <!-- end of column -->
@@ -153,39 +157,40 @@
 						<div class="col">
 							<div class="booking">
 								<fieldset>
-									<legend>3 days / 2 nights</legend>
-								<legend>From €580</legend>
-									<legend>Select arrival date</legend>
+									<legend>Day trip to Killarney National Park </legend>
+								<legend>From €80</legend>
+									<legend>Select date</legend>
 									<select id="date" name="date">
 										<!-- dropdown menu for retreat dates-->
-										<option value=1>Friday June 24, 2022</option>
-										<option value=2>Friday August 19, 2022</option>
+										<option value=1>Saturday June 25, 2022</option>
+										<option value=2>Saturday August 20, 2022</option>
 									</select>
 									<br />
-									<legend>Departure:</legend>
-									<span id="datemessage"></span>
-
+									<!-- <legend>Departure:</legend>
+									<span id="datemessage"></span> -->
+                  <br />
 									<legend >Select your package: </legend>
 									<!-- <label class='radiolabel'><input type="radio"  name="selectedpackage" value="1 person" checked="checked"/>1 person  private single room Retreat Centre Total price  €580</label><br/>
 									<label class='radiolabel'><input type="radio"  name="selectedpackage" value="2 person" />2 persons  private town room Retreat Centre Total price  €1060</label><br/> -->
-									<label class="radio-label">
+                  <label class="radio-label">
+                  <div class="opt-container">
+                    <input type="radio" name="persons" class="radio-button" value="1" checked="checked">
+                    <span class="new-button"></span>
+                    <div class="button-label">
+                      1 person trip Total price €80
+                    </div>
+                  </div>
+                  </label>
+                  <label class="radio-label">
 								  <div class="opt-container">
-								    <input type="radio" name="persons" class="radio-button" value="1" checked="checked">
+								    <input type="radio" name="persons" class="radio-button" value="2" >
 								    <span class="new-button"></span>
 								    <div class="button-label">
-								      1 person  private single room Total price  €580
+								      Family package (2 adults 2 children) Total price  €210
 								    </div>
 								  </div>
 								</label>
-								<label class="radio-label">
-								  <div class="opt-container">
-								    <input type="radio" name="persons" class="radio-button" value="2">
-								    <span class="new-button"></span>
-								    <div class="button-label">
-								      2 persons  private twin room  Total price  €1060
-								    </div>
-								  </div>
-								</label>
+
 
 									<input type='submit' id='sendinquery' value='     Send Inquery    ' />
 									<input type='submit' id='requesttobook' value='  Request to Book  ' />
