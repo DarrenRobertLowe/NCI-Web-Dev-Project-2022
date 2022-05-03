@@ -87,7 +87,7 @@ input, select, textarea {
 }
 
 
-.nameError, .emailError{
+.nameError, .emailError, .commentsError{
 	margin-left: 10px;
 	color:red;
 }
