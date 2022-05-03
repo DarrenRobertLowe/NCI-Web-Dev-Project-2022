@@ -1,3 +1,7 @@
+function confirm_reset(){
+  return confirm("Please confirm you want to reset the page");
+}
+
 $(document).ready(function() {
   $('.error').hide();
   $('#submit').click(function(){
@@ -33,3 +37,4 @@ return false;
 return true;
 }
 }
+
