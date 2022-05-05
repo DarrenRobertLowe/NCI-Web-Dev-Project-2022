@@ -75,14 +75,7 @@ $(document).ready(function() {
 		modal.style.display = "block";	// show the modal
 		$('#contactForm').trigger("reset");	// reset the form
 	}
-	
-	
-    $.post("", $("#contactForm").serialize(),  function(response) {
-      $('#contactForm').fadeOut('slow',function(){
-      $('#correct').html(response);
-      $('#correct').fadeIn('slow');
-      });
-    });
+
     return false;
 });
 });
