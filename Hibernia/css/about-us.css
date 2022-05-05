@@ -3,11 +3,6 @@ body {
   color: black;
 }
 
-p {
-	margin:5px;
-	padding:5px;
-}
-
 img {
   width: 100%;
   height:100%;
@@ -15,24 +10,13 @@ img {
 	padding:3px;
 }
 
-#navbar {
-	position:relative;
-	bottom: 0px;
-}
-
-#buffer{
-	background: #5584ac;
-}
 
 #contentArea {
 	padding: 30px;
   text-align: justify;
 }
 
-#footer{
-	height:50px;
-	text-align:right;
-}
+
 
 .leftImage {
 	float:left;

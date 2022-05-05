@@ -19,11 +19,15 @@ img {
 	bottom: 0px;
 }
 
-#buffer{
+#buffer-left{
 	/*background: WhiteSmoke;*/
 	background: #5584ac;
 }
 
+#buffer-right{
+	/*background: WhiteSmoke;*/
+	background: #5584ac;
+}
 
 
 #contentArea {
@@ -81,7 +85,7 @@ img {
 }
 
 
-#buffer{
+.buffer{
 	border: solid 2px pink;
 }
 
